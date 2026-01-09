@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { IOrgChartNode } from '../types';
+import { IReactChartXNode } from '../types';
 import { OrgCard } from './OrgCard';
 
 interface IOrgColumnProps {
-    nodes: IOrgChartNode[];
+    nodes: IReactChartXNode[];
     colIndex: number;
     // We need to know which node is active to highlight it.
     // The active node in THIS column is the one that lies on the 'path' at index `colIndex + 1`.
@@ -21,7 +21,7 @@ interface IOrgColumnProps {
         cardTextColor: string;
         cardTitleColor: string;
     };
-    onCardClick: (node: IOrgChartNode) => void;
+    onCardClick: (node: IReactChartXNode) => void;
     onScroll?: () => void;
 }
 

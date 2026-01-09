@@ -1,16 +1,16 @@
-export interface IOrgChartNode {
+export interface IReactChartXNode {
   id: string;
   name: string;
   title?: string;
   image?: string;
   total_children?: number;
-  children?: IOrgChartNode[];
+  children?: IReactChartXNode[];
   // Allow other custom properties
   [key: string]: any;
 }
 
-export interface IModernOrgChartProps {
-  data: IOrgChartNode;
+export interface IReactChartXProps {
+  data: IReactChartXNode;
   styleOptions?: {
     activeColor?: string;
     connectorColor?: string;

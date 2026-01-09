@@ -1,13 +1,13 @@
 import * as d3 from 'd3';
 import React, { useEffect, useRef, useState } from 'react';
 import { OrgColumn } from './components/OrgColumn';
-import { IModernOrgChartProps, IOrgChartNode } from './types';
+import { IReactChartXProps, IReactChartXNode } from './types';  
 import { drawConnectors } from './utils/drawConnectors';
 
 // Default theme
 const DEFAULT_ACTIVE_COLOR = 'rgb(0 203 108)';
 
-export default function ModernOrgChart({ data, styleOptions }: IModernOrgChartProps) {
+export default function ReactChartX({ data, styleOptions }: IReactChartXProps) {
   const activeColor = styleOptions?.activeColor || DEFAULT_ACTIVE_COLOR;
   const connectorColor = styleOptions?.connectorColor || '#CCCCCC';
   const textColor = styleOptions?.textColor || '#000000';
@@ -20,7 +20,7 @@ export default function ModernOrgChart({ data, styleOptions }: IModernOrgChartPr
 
   const containerRef = useRef<HTMLDivElement | null>(null);
   const connectorLayerRef = useRef<SVGSVGElement | null>(null);
-  const [path, setPath] = useState<IOrgChartNode[]>([data]); // active path of nodes
+  const [path, setPath] = useState<IReactChartXNode[]>([data]); // active path of nodes
   const [redrawTrigger, setRedrawTrigger] = useState(0); // Simple counter to force redraws
 
   // Style object to pass down
@@ -50,7 +50,7 @@ export default function ModernOrgChart({ data, styleOptions }: IModernOrgChartPr
   }, [data]);
 
   // Handle Card Click
-  const handleCardClick = (node: IOrgChartNode, colIndex: number) => {
+  const handleCardClick = (node: IReactChartXNode, colIndex: number) => {
     // New path is slice(0, colIndex + 1) + node
     const newPath = [...path.slice(0, colIndex + 1), node];
     setPath(newPath);
@@ -128,7 +128,7 @@ export default function ModernOrgChart({ data, styleOptions }: IModernOrgChartPr
           const isCompact = colIndex < path.length - cutoff;
 
           // Nodes to display in this column
-          let nodesToRender: IOrgChartNode[] = [];
+          let nodesToRender: IReactChartXNode[] = [];
 
           // Legacy mapping logic:
           // Col 0: renders path[0] (or its children if synthetic & colIdx0)
