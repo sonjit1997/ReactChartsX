@@ -1,10 +1,10 @@
 import * as d3 from 'd3';
-import { IOrgChartNode } from '../types';
+import { IReactChartXNode } from '../types';
 
 interface IDrawConnectorsParams {
     container: HTMLElement;
     connectorLayer: d3.Selection<SVGGElement, unknown, null, undefined> | d3.Selection<SVGSVGElement, unknown, null, undefined>;
-    path: IOrgChartNode[];
+    path: IReactChartXNode[];
     colIndex: number;
     activeColor: string;
     connectorColor: string;
