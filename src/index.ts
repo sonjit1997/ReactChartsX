@@ -1,3 +1,3 @@
-export { default as ModernOrgChart } from './ModernOrgChart';
-export type { IModernOrgChartProps, IOrgChartNode } from './types';
+export { default as ReactChartX } from './ReactChartX';
+export type { IReactChartXProps, IReactChartXNode } from './types';
 
