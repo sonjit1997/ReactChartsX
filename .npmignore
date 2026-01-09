@@ -1,0 +1,23 @@
+# Source files
+src/
+tsconfig.json
+tsup.config.ts
+
+# Development files
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+.github/
+examples/
+
+# Configuration
+.eslintrc*
+.prettierrc*
+.editorconfig
+
+# Documentation (except README)
+docs/
+
+# Build tools
+node_modules/
