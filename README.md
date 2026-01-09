@@ -165,7 +165,7 @@ The component now uses **pure CSS** (inline styles). It works out-of-the-box in 
 
 ## License
 
-MIT © [Your Name]
+MIT © Sonjit Saha
 
 ## Contributing
 
