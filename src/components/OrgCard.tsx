@@ -1,10 +1,10 @@
 import React from 'react';
-import { IOrgChartNode } from '../types';
+import { IReactChartXNode } from '../types';
 
 interface IOrgCardProps {
-    node: IOrgChartNode;
+    node: IReactChartXNode;
     isActive: boolean;
-    isCompact: boolean;
+    isCompact: boolean; 
     styleOptions: {
         activeColor: string;
         activeBgColor: string;
@@ -14,7 +14,7 @@ interface IOrgCardProps {
         cardTextColor: string;
         cardTitleColor: string;
     };
-    onClick: (node: IOrgChartNode) => void;
+    onClick: (node: IReactChartXNode) => void;
 }
 
 export const OrgCard: React.FC<IOrgCardProps> = ({
