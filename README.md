@@ -7,7 +7,7 @@ A modern, interactive organizational chart component for React with D3.js visual
 - 🎨 **Modern Design** - Clean, professional interface with smooth interactions
 - 🔄 **Interactive Navigation** - Click through organizational levels dynamically
 - 📏 **Compact Mode** - Smartly collapses older columns to save screen space while keeping context
-- 🖱️ **Scroll Indicators** - Interactive hover arrows for easy navigation in long lists
+<!-- - 🖱️ **Scroll Indicators** - Interactive hover arrows for easy navigation in long lists -->
 - 📊 **D3.js Powered** - Robust visualization with automatic layout management
 - 🎯 **TypeScript Support** - Full type definitions included
 - 🪶 **Lightweight** - Minimal dependencies, optimized bundle size
@@ -173,4 +173,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Support
 
-If you encounter any issues or have questions, please [open an issue](https://github.com/yourusername/react-charts-x/issues).
+If you encounter any issues or have questions, please [open an issue](https://github.com/sonjit1997/ReactChartsX/issues).
