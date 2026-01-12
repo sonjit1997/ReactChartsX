@@ -1,4 +1,4 @@
-# react-modern-org-chart
+# react-charts-x
 
 A modern, interactive organizational chart component for React with D3.js visualization. Perfect for displaying company hierarchies, team structures, and reporting relationships.
 
@@ -16,15 +16,15 @@ A modern, interactive organizational chart component for React with D3.js visual
 ## Installation
 
 ```bash
-npm install react-modern-org-chart d3
+npm install react-charts-x d3
 ```
 
 ```bash
-pnpm add react-modern-org-chart d3
+pnpm add react-charts-x d3
 ```
 
 ```bash
-yarn add react-modern-org-chart d3
+yarn add react-charts-x d3
 ```
 
 > **Note**: `d3` is a peer dependency and must be installed separately.
@@ -34,7 +34,7 @@ yarn add react-modern-org-chart d3
 ### Basic Example
 
 ```tsx
-import { ReactChartX, IReactChartXNode } from 'react-modern-org-chart';
+import { ReactChartX, IReactChartXNode } from 'react-charts-x';
 
 function App() {
   const orgData: IReactChartXNode = {
@@ -73,7 +73,7 @@ function App() {
 If you have multiple employees without a common parent (e.g., multiple CEOs or independent teams), use a synthetic root:
 
 ```tsx
-import { ReactChartX, IReactChartXNode } from 'react-modern-org-chart';
+import { ReactChartX, IReactChartXNode } from 'react-charts-x';
 
 function App() {
   const employees: IReactChartXNode[] = [
@@ -173,4 +173,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Support
 
-If you encounter any issues or have questions, please [open an issue](https://github.com/yourusername/react-modern-org-chart/issues).
+If you encounter any issues or have questions, please [open an issue](https://github.com/yourusername/react-charts-x/issues).
