@@ -1,6 +1,6 @@
 {
   "name": "react-charts-x",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A modern, interactive organizational chart component for React with D3.js visualization",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
