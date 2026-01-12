@@ -1,5 +1,9 @@
 # react-charts-x
 
+![npm](https://img.shields.io/npm/v/react-charts-x)
+![downloads](https://img.shields.io/npm/dm/react-charts-x)
+![license](https://img.shields.io/npm/l/react-charts-x)
+
 A modern, interactive organizational chart component for React with D3.js visualization. Perfect for displaying company hierarchies, team structures, and reporting relationships.
 
 ## Features

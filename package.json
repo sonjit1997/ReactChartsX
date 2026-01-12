@@ -1,6 +1,6 @@
 {
   "name": "react-charts-x",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A modern, interactive organizational chart component for React with D3.js visualization",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -24,19 +24,27 @@
   },
   "keywords": [
     "react",
-    "organizational-chart",
+    "react-chart",
     "org-chart",
-    "d3",
+    "organizational-chart",
     "hierarchy",
     "tree",
-    "visualization",
-    "component"
+    "d3",
+    "d3-hierarchy",
+    "react-d3",
+    "company-structure",
+    "family-tree",
+    "org-structure"
   ],
-  "author": "",
+  "author": "Sonjit Saha",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/sonjit1997/ReactChartsX"
+  },
+  "homepage": "https://github.com/sonjit1997/ReactChartsX",
+  "bugs": {
+    "url": "https://github.com/sonjit1997/ReactChartsX/issues"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
