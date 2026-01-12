@@ -34,10 +34,10 @@ yarn add react-modern-org-chart d3
 ### Basic Example
 
 ```tsx
-import { ModernOrgChart, IOrgChartNode } from 'react-modern-org-chart';
+import { ReactChartX, IReactChartXNode } from 'react-modern-org-chart';
 
 function App() {
-  const orgData: IOrgChartNode = {
+  const orgData: IReactChartXNode = {
     id: '1',
     name: 'Jane Doe',
     title: 'CEO',
@@ -64,7 +64,7 @@ function App() {
     ]
   };
 
-  return <ModernOrgChart data={orgData} />;
+  return <ReactChartX data={orgData} />;
 }
 ```
 
@@ -73,17 +73,17 @@ function App() {
 If you have multiple employees without a common parent (e.g., multiple CEOs or independent teams), use a synthetic root:
 
 ```tsx
-import { ModernOrgChart, IOrgChartNode } from 'react-modern-org-chart';
+import { ReactChartX, IReactChartXNode } from 'react-modern-org-chart';
 
 function App() {
-  const employees: IOrgChartNode[] = [
+  const employees: IReactChartXNode[] = [
     // Array of top-level employees from your API
   ];
 
   const ceo = employees.find(e => e.total_children > 0);
   const noReporters = employees.filter(e => e.total_children === 0);
 
-  const syntheticRoot: IOrgChartNode = {
+  const syntheticRoot: IReactChartXNode = {
     id: 'synthetic-root',
     name: '',
     title: '',
@@ -91,28 +91,28 @@ function App() {
     children: [...(ceo ? [ceo] : []), ...noReporters]
   };
 
-  return <ModernOrgChart data={syntheticRoot} />;
+  return <ReactChartX data={syntheticRoot} />;
 }
 ```
 
 ## API Reference
 
-### `ModernOrgChart` Props
+### `ReactChartX` Props
 
 | Prop | Type | Required | Description |
 |------|------|----------|-------------|
-| `data` | `IOrgChartNode` | Yes | Root node of the organizational hierarchy |
+| `data` | `IReactChartXNode` | Yes | Root node of the organizational hierarchy |
 
-### `IOrgChartNode` Interface
+### `IReactChartXNode` Interface
 
 ```tsx
-interface IOrgChartNode {
+interface IReactChartXNode {
   id: string;             // Unique identifier (formerly empId)
   name: string;           // Name of the entity
   title?: string;         // Title/Role (formerly designation)
   image?: string;         // URL to image (formerly photo)
   total_children?: number;// Number of direct reports
-  children?: IOrgChartNode[]; // Array of children nodes
+  children?: IReactChartXNode[]; // Array of children nodes
   // ... any other custom properties
 }
 ```
@@ -138,7 +138,7 @@ The component now uses **pure CSS** (inline styles). It works out-of-the-box in 
 ### Customizing Colors Example
 
 ```tsx
-<ModernOrgChart 
+<ReactChartX 
   data={data}
   styleOptions={{
     activeColor: '#3b82f6', // Blue
